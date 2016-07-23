@@ -1,0 +1,721 @@
+This is a game of Clue between three (compuer) players in which a player learns
+the secret cards merely by observing that another player passes at the end of
+their turn. This answers a question of van Ditmarsch, "The description of game
+actions in Cluedo." Agents are unsure of cards which appear in parentheses;
+cards in all caps are known.
+
+
+Secret cards: cdstick, library, MrsPeacock
+P1 cards: study, MissScarlett, MsWhite, ballroom, kitchen, lounge
+P2 cards: knife, revolver, dining, rope, ColMustard, ProfPlum
+P3 cards: pipe, hall, billiard, conservatory, MrGreen, wrench
+
+turn   1, game 147 ------------------------------
+P3 named [rope, ballroom, MrsPeacock]
+P1 refuted by showing ['ballroom']
+
+Knowledge of P3:
+  P1      (cdstick, knife, revolver, rope)
+          BALLROOM (dining, kitchen, library, lounge, study)
+          (ColMustard, MissScarlett, MrsPeacock, MsWhite, ProfPlum)
+  P2      (cdstick, knife, revolver, rope)
+          (dining, kitchen, library, lounge, study)
+          (ColMustard, MissScarlett, MrsPeacock, MsWhite, ProfPlum)
+  secret  (cdstick, knife, revolver, rope)
+          (dining, kitchen, library, lounge, study)
+          (ColMustard, MissScarlett, MrsPeacock, MsWhite, ProfPlum)
+
+Knowledge of P1:
+  P2      (cdstick, knife, pipe, revolver, rope, wrench)
+          (billiard, conservatory, dining, hall, library)
+          (ColMustard, MrGreen, MrsPeacock, ProfPlum)
+  P3      (cdstick, knife, pipe, revolver, rope, wrench)
+          (billiard, conservatory, dining, hall, library)
+          (ColMustard, MrGreen, MrsPeacock, ProfPlum)
+  secret  (cdstick, knife, pipe, revolver, rope, wrench)
+          (billiard, conservatory, dining, hall, library)
+          (ColMustard, MrGreen, MrsPeacock, ProfPlum)
+
+Knowledge of P2:
+  P1      (cdstick, pipe, wrench)
+          (ballroom, billiard, conservatory, hall, kitchen, library, lounge, study)
+          (MissScarlett, MrGreen, MrsPeacock, MsWhite)
+  P3      (cdstick, pipe, wrench)
+          (ballroom, billiard, conservatory, hall, kitchen, library, lounge, study)
+          (MissScarlett, MrGreen, MrsPeacock, MsWhite)
+  secret  (cdstick, pipe, wrench)
+          (ballroom, billiard, conservatory, hall, kitchen, library, lounge, study)
+          (MissScarlett, MrGreen, MrsPeacock, MsWhite)
+
+turn   2, game 147 ------------------------------
+P1 named [rope, conservatory, MrsPeacock]
+P2 refuted by showing ['rope']
+
+Knowledge of P1:
+  P2      ROPE (cdstick, knife, pipe, revolver, wrench)
+          (billiard, conservatory, dining, hall, library)
+          (ColMustard, MrGreen, MrsPeacock, ProfPlum)
+  P3      (cdstick, knife, pipe, revolver, wrench)
+          (billiard, conservatory, dining, hall, library)
+          (ColMustard, MrGreen, MrsPeacock, ProfPlum)
+  secret  (cdstick, knife, pipe, revolver, wrench)
+          (billiard, conservatory, dining, hall, library)
+          (ColMustard, MrGreen, MrsPeacock, ProfPlum)
+
+Knowledge of P2:
+  P1      (cdstick, pipe, wrench)
+          (ballroom, billiard, conservatory, hall, kitchen, library, lounge, study)
+          (MissScarlett, MrGreen, MrsPeacock, MsWhite)
+  P3      (cdstick, pipe, wrench)
+          (ballroom, billiard, conservatory, hall, kitchen, library, lounge, study)
+          (MissScarlett, MrGreen, MrsPeacock, MsWhite)
+  secret  (cdstick, pipe, wrench)
+          (ballroom, billiard, conservatory, hall, kitchen, library, lounge, study)
+          (MissScarlett, MrGreen, MrsPeacock, MsWhite)
+
+Knowledge of P3:
+  P1      (cdstick, knife, revolver, rope)
+          BALLROOM (dining, kitchen, library, lounge, study)
+          (ColMustard, MissScarlett, MrsPeacock, MsWhite, ProfPlum)
+  P2      (cdstick, knife, revolver, rope)
+          (dining, kitchen, library, lounge, study)
+          (ColMustard, MissScarlett, MrsPeacock, MsWhite, ProfPlum)
+  secret  (cdstick, knife, revolver, rope)
+          (dining, kitchen, library, lounge, study)
+          (ColMustard, MissScarlett, MrsPeacock, MsWhite, ProfPlum)
+
+turn   3, game 147 ------------------------------
+P2 named [pipe, conservatory, MrsPeacock]
+P3 refuted by showing ['conservatory']
+
+Knowledge of P2:
+  P1      (cdstick, pipe, wrench)
+          (ballroom, billiard, hall, kitchen, library, lounge, study)
+          (MissScarlett, MrGreen, MrsPeacock, MsWhite)
+  P3      (cdstick, pipe, wrench)
+          CONSERVATORY (ballroom, billiard, hall, kitchen, library, lounge, study)
+          (MissScarlett, MrGreen, MrsPeacock, MsWhite)
+  secret  (cdstick, pipe, wrench)
+          (ballroom, billiard, hall, kitchen, library, lounge, study)
+          (MissScarlett, MrGreen, MrsPeacock, MsWhite)
+
+Knowledge of P1:
+  P2      ROPE (cdstick, knife, pipe, revolver, wrench)
+          (billiard, conservatory, dining, hall, library)
+          (ColMustard, MrGreen, MrsPeacock, ProfPlum)
+  P3      (cdstick, knife, pipe, revolver, wrench)
+          (billiard, conservatory, dining, hall, library)
+          (ColMustard, MrGreen, MrsPeacock, ProfPlum)
+  secret  (cdstick, knife, pipe, revolver, wrench)
+          (billiard, conservatory, dining, hall, library)
+          (ColMustard, MrGreen, MrsPeacock, ProfPlum)
+
+Knowledge of P3:
+  P1      (cdstick, knife, revolver, rope)
+          BALLROOM (dining, kitchen, library, lounge, study)
+          (ColMustard, MissScarlett, MrsPeacock, MsWhite, ProfPlum)
+  P2      (cdstick, knife, revolver, rope)
+          (dining, kitchen, library, lounge, study)
+          (ColMustard, MissScarlett, MrsPeacock, MsWhite, ProfPlum)
+  secret  (cdstick, knife, revolver, rope)
+          (dining, kitchen, library, lounge, study)
+          (ColMustard, MissScarlett, MrsPeacock, MsWhite, ProfPlum)
+
+turn   4, game 147 ------------------------------
+P3 named [rope, lounge, MrsPeacock]
+P1 refuted by showing ['lounge']
+
+Knowledge of P3:
+  P1      (cdstick, knife, revolver, rope)
+          BALLROOM, LOUNGE (dining, kitchen, library, study)
+          (ColMustard, MissScarlett, MrsPeacock, MsWhite, ProfPlum)
+  P2      (cdstick, knife, revolver, rope)
+          (dining, kitchen, library, study)
+          (ColMustard, MissScarlett, MrsPeacock, MsWhite, ProfPlum)
+  secret  (cdstick, knife, revolver, rope)
+          (dining, kitchen, library, study)
+          (ColMustard, MissScarlett, MrsPeacock, MsWhite, ProfPlum)
+
+Knowledge of P1:
+  P2      ROPE (cdstick, knife, pipe, revolver, wrench)
+          (billiard, conservatory, dining, hall, library)
+          (ColMustard, MrGreen, MrsPeacock, ProfPlum)
+  P3      (cdstick, knife, pipe, revolver, wrench)
+          (billiard, conservatory, dining, hall, library)
+          (ColMustard, MrGreen, MrsPeacock, ProfPlum)
+  secret  (cdstick, knife, pipe, revolver, wrench)
+          (billiard, conservatory, dining, hall, library)
+          (ColMustard, MrGreen, MrsPeacock, ProfPlum)
+
+Knowledge of P2:
+  P1      (cdstick, pipe, wrench)
+          (ballroom, billiard, hall, kitchen, library, lounge, study)
+          (MissScarlett, MrGreen, MrsPeacock, MsWhite)
+  P3      (cdstick, pipe, wrench)
+          CONSERVATORY (ballroom, billiard, hall, kitchen, library, lounge, study)
+          (MissScarlett, MrGreen, MrsPeacock, MsWhite)
+  secret  (cdstick, pipe, wrench)
+          (ballroom, billiard, hall, kitchen, library, lounge, study)
+          (MissScarlett, MrGreen, MrsPeacock, MsWhite)
+
+turn   5, game 147 ------------------------------
+P1 named [pipe, conservatory, MrsPeacock]
+P2 could not refute
+P3 refuted by showing ['conservatory']
+
+Knowledge of P1:
+  P2      ROPE (cdstick, knife, revolver, wrench)
+          (billiard, dining, hall, library)
+          (ColMustard, MrGreen, ProfPlum)
+  P3      (cdstick, knife, pipe, revolver, wrench)
+          CONSERVATORY (billiard, dining, hall, library)
+          (ColMustard, MrGreen, MrsPeacock, ProfPlum)
+  secret  (cdstick, knife, pipe, revolver, wrench)
+          (billiard, dining, hall, library)
+          (ColMustard, MrGreen, MrsPeacock, ProfPlum)
+
+Knowledge of P2:
+  P1      (cdstick, pipe, wrench)
+          (ballroom, billiard, hall, kitchen, library, lounge, study)
+          (MissScarlett, MrGreen, MrsPeacock, MsWhite)
+  P3      (cdstick, pipe, wrench)
+          CONSERVATORY (ballroom, billiard, hall, kitchen, library, lounge, study)
+          (MissScarlett, MrGreen, MrsPeacock, MsWhite)
+  secret  (cdstick, pipe, wrench)
+          (ballroom, billiard, hall, kitchen, library, lounge, study)
+          (MissScarlett, MrGreen, MrsPeacock, MsWhite)
+
+Knowledge of P3:
+  P1      (cdstick, knife, revolver)
+          BALLROOM, LOUNGE (dining, kitchen, library, study)
+          (ColMustard, MissScarlett, MrsPeacock, MsWhite, ProfPlum)
+  P2      ROPE (cdstick, knife, revolver)
+          (dining, kitchen, library, study)
+          (ColMustard, MissScarlett, MsWhite, ProfPlum)
+  secret  (cdstick, knife, revolver)
+          (dining, kitchen, library, study)
+          (ColMustard, MissScarlett, MrsPeacock, MsWhite, ProfPlum)
+
+turn   6, game 147 ------------------------------
+P2 named [pipe, ballroom, MrsPeacock]
+P3 refuted by showing ['pipe']
+
+Knowledge of P2:
+  P1      (cdstick, wrench)
+          (ballroom, billiard, hall, kitchen, library, lounge, study)
+          (MissScarlett, MrGreen, MrsPeacock, MsWhite)
+  P3      PIPE (cdstick, wrench)
+          CONSERVATORY (ballroom, billiard, hall, kitchen, library, lounge, study)
+          (MissScarlett, MrGreen, MrsPeacock, MsWhite)
+  secret  (cdstick, wrench)
+          (ballroom, billiard, hall, kitchen, library, lounge, study)
+          (MissScarlett, MrGreen, MrsPeacock, MsWhite)
+
+Knowledge of P1:
+  P2      ROPE (cdstick, knife, revolver, wrench)
+          (billiard, dining, hall, library)
+          (ColMustard, MrGreen, ProfPlum)
+  P3      (cdstick, knife, pipe, revolver, wrench)
+          CONSERVATORY (billiard, dining, hall, library)
+          (ColMustard, MrGreen, MrsPeacock, ProfPlum)
+  secret  (cdstick, knife, pipe, revolver, wrench)
+          (billiard, dining, hall, library)
+          (ColMustard, MrGreen, MrsPeacock, ProfPlum)
+
+Knowledge of P3:
+  P1      (cdstick, knife, revolver)
+          BALLROOM, LOUNGE (dining, kitchen, library, study)
+          (ColMustard, MissScarlett, MrsPeacock, MsWhite, ProfPlum)
+  P2      ROPE (cdstick, knife, revolver)
+          (dining, kitchen, library, study)
+          (ColMustard, MissScarlett, MsWhite, ProfPlum)
+  secret  (cdstick, knife, revolver)
+          (dining, kitchen, library, study)
+          (ColMustard, MissScarlett, MrsPeacock, MsWhite, ProfPlum)
+
+turn   7, game 147 ------------------------------
+P3 named [cdstick, dining, MrsPeacock]
+P1 could not refute
+P2 refuted by showing ['dining']
+
+Knowledge of P3:
+  P1      (knife, revolver)
+          BALLROOM, LOUNGE (kitchen, library, study)
+          (ColMustard, MissScarlett, MsWhite, ProfPlum)
+  P2      ROPE (cdstick, knife, revolver)
+          DINING (kitchen, library, study)
+          (ColMustard, MissScarlett, MsWhite, ProfPlum)
+  secret  (cdstick, knife, revolver)
+          (kitchen, library, study)
+          MRSPEACOCK
+
+Knowledge of P1:
+  P2      ROPE (cdstick, knife, revolver, wrench)
+          (billiard, dining, hall, library)
+          (ColMustard, MrGreen, ProfPlum)
+  P3      (cdstick, knife, pipe, revolver, wrench)
+          CONSERVATORY (billiard, dining, hall, library)
+          (ColMustard, MrGreen, MrsPeacock, ProfPlum)
+  secret  (cdstick, knife, pipe, revolver, wrench)
+          (billiard, dining, hall, library)
+          (ColMustard, MrGreen, MrsPeacock, ProfPlum)
+
+Knowledge of P2:
+  P1      (wrench)
+          BALLROOM, LOUNGE (billiard, hall, kitchen, library, study)
+          (MissScarlett, MrGreen, MsWhite)
+  P3      PIPE (cdstick, wrench)
+          CONSERVATORY (billiard, hall, kitchen, library, study)
+          (MissScarlett, MrGreen, MrsPeacock, MsWhite)
+  secret  (cdstick, wrench)
+          (billiard, hall, kitchen, library, study)
+          (MissScarlett, MrGreen, MrsPeacock, MsWhite)
+
+turn   8, game 147 ------------------------------
+P1 named [pipe, dining, MrsPeacock]
+P2 refuted by showing ['dining']
+
+Knowledge of P1:
+  P2      ROPE (cdstick, knife, revolver, wrench)
+          DINING (billiard, hall, library)
+          (ColMustard, MrGreen, ProfPlum)
+  P3      (cdstick, knife, pipe, revolver, wrench)
+          CONSERVATORY (billiard, hall, library)
+          (ColMustard, MrGreen, MrsPeacock, ProfPlum)
+  secret  (cdstick, knife, pipe, revolver, wrench)
+          (billiard, hall, library)
+          (ColMustard, MrGreen, MrsPeacock, ProfPlum)
+
+Knowledge of P2:
+  P1      (wrench)
+          BALLROOM, LOUNGE (billiard, hall, kitchen, library, study)
+          (MissScarlett, MrGreen, MsWhite)
+  P3      PIPE (cdstick, wrench)
+          CONSERVATORY (billiard, hall, kitchen, library, study)
+          (MissScarlett, MrGreen, MrsPeacock, MsWhite)
+  secret  (cdstick, wrench)
+          (billiard, hall, kitchen, library, study)
+          (MissScarlett, MrGreen, MrsPeacock, MsWhite)
+
+Knowledge of P3:
+  P1      (knife, revolver)
+          BALLROOM, LOUNGE (kitchen, library, study)
+          (ColMustard, MissScarlett, MsWhite, ProfPlum)
+  P2      ROPE (cdstick, knife, revolver)
+          DINING (kitchen, library, study)
+          (ColMustard, MissScarlett, MsWhite, ProfPlum)
+  secret  (cdstick, knife, revolver)
+          (kitchen, library, study)
+          MRSPEACOCK
+
+turn   9, game 147 ------------------------------
+P2 named [cdstick, study, MrsPeacock]
+P3 could not refute
+P1 refuted by showing ['study']
+
+Knowledge of P2:
+  P1      (wrench)
+          BALLROOM, LOUNGE, STUDY (billiard, hall, kitchen, library)
+          (MissScarlett, MrGreen, MsWhite)
+  P3      PIPE (wrench)
+          CONSERVATORY (billiard, hall, kitchen, library)
+          (MissScarlett, MrGreen, MsWhite)
+  secret  CDSTICK
+          (billiard, hall, kitchen, library)
+          MRSPEACOCK
+
+Knowledge of P1:
+  P2      ROPE (cdstick, knife, revolver, wrench)
+          DINING (billiard, hall, library)
+          (ColMustard, MrGreen, ProfPlum)
+  P3      PIPE (knife, revolver, wrench)
+          CONSERVATORY (billiard, hall, library)
+          (ColMustard, MrGreen, ProfPlum)
+  secret  (cdstick, knife, revolver, wrench)
+          (billiard, hall, library)
+          MRSPEACOCK
+
+Knowledge of P3:
+  P1      (knife, revolver)
+          BALLROOM, LOUNGE, STUDY (kitchen, library)
+          (ColMustard, MissScarlett, MsWhite, ProfPlum)
+  P2      ROPE (cdstick, knife, revolver)
+          DINING (kitchen, library)
+          (ColMustard, MissScarlett, MsWhite, ProfPlum)
+  secret  (cdstick, knife, revolver)
+          (kitchen, library)
+          MRSPEACOCK
+
+turn  10, game 147 ------------------------------
+P3 named [cdstick, library, MissScarlett]
+P1 refuted by showing ['MissScarlett']
+
+Knowledge of P3:
+  P1      (knife, revolver)
+          BALLROOM, LOUNGE, STUDY (kitchen, library)
+          MISSSCARLETT (ColMustard, MsWhite, ProfPlum)
+  P2      ROPE (cdstick, knife, revolver)
+          DINING (kitchen, library)
+          (ColMustard, MsWhite, ProfPlum)
+  secret  (cdstick, knife, revolver)
+          (kitchen, library)
+          MRSPEACOCK
+
+Knowledge of P1:
+  P2      ROPE (cdstick, knife, revolver, wrench)
+          DINING (billiard, hall, library)
+          (ColMustard, MrGreen, ProfPlum)
+  P3      PIPE (knife, revolver, wrench)
+          CONSERVATORY (billiard, hall, library)
+          (ColMustard, MrGreen, ProfPlum)
+  secret  (cdstick, knife, revolver, wrench)
+          (billiard, hall, library)
+          MRSPEACOCK
+
+Knowledge of P2:
+  P1      (wrench)
+          BALLROOM, LOUNGE, STUDY (billiard, hall, kitchen, library)
+          (MissScarlett, MrGreen, MsWhite)
+  P3      PIPE (wrench)
+          CONSERVATORY (billiard, hall, kitchen, library)
+          (MissScarlett, MrGreen, MsWhite)
+  secret  CDSTICK
+          (billiard, hall, kitchen, library)
+          MRSPEACOCK
+
+turn  11, game 147 ------------------------------
+P1 named [cdstick, billiard, MrGreen]
+P2 could not refute
+P3 refuted by showing ['billiard']
+
+Knowledge of P1:
+  P2      ROPE (knife, revolver, wrench)
+          DINING (hall, library)
+          (ColMustard, ProfPlum)
+  P3      PIPE (knife, revolver, wrench)
+          BILLIARD, CONSERVATORY (hall, library)
+          MRGREEN (ColMustard, ProfPlum)
+  secret  CDSTICK
+          (hall, library)
+          MRSPEACOCK
+
+Knowledge of P2:
+  P1      (wrench)
+          BALLROOM, LOUNGE, STUDY (billiard, hall, kitchen, library)
+          (MissScarlett, MrGreen, MsWhite)
+  P3      PIPE (wrench)
+          CONSERVATORY (billiard, hall, kitchen, library)
+          (MissScarlett, MrGreen, MsWhite)
+  secret  CDSTICK
+          (billiard, hall, kitchen, library)
+          MRSPEACOCK
+
+Knowledge of P3:
+  P1      (knife, revolver)
+          BALLROOM, LOUNGE, STUDY (kitchen, library)
+          MISSSCARLETT (ColMustard, MsWhite, ProfPlum)
+  P2      ROPE (knife, revolver)
+          DINING (kitchen, library)
+          (ColMustard, MsWhite, ProfPlum)
+  secret  CDSTICK
+          (kitchen, library)
+          MRSPEACOCK
+
+turn  12, game 147 ------------------------------
+P2 named [wrench, billiard, MissScarlett]
+P3 refuted by showing ['billiard']
+
+Knowledge of P2:
+  P1      (wrench)
+          BALLROOM, LOUNGE, STUDY (hall, kitchen, library)
+          (MissScarlett, MrGreen, MsWhite)
+  P3      PIPE (wrench)
+          BILLIARD, CONSERVATORY (hall, kitchen, library)
+          (MissScarlett, MrGreen, MsWhite)
+  secret  CDSTICK
+          (hall, kitchen, library)
+          MRSPEACOCK
+
+Knowledge of P1:
+  P2      ROPE (knife, revolver, wrench)
+          DINING (hall, library)
+          (ColMustard, ProfPlum)
+  P3      PIPE (knife, revolver, wrench)
+          BILLIARD, CONSERVATORY (hall, library)
+          MRGREEN (ColMustard, ProfPlum)
+  secret  CDSTICK
+          (hall, library)
+          MRSPEACOCK
+
+Knowledge of P3:
+  P1      (knife, revolver)
+          BALLROOM, LOUNGE, STUDY (kitchen, library)
+          MISSSCARLETT (ColMustard, MsWhite, ProfPlum)
+  P2      ROPE (knife, revolver)
+          DINING (kitchen, library)
+          (ColMustard, MsWhite, ProfPlum)
+  secret  CDSTICK
+          (kitchen, library)
+          MRSPEACOCK
+
+turn  13, game 147 ------------------------------
+P3 named [revolver, library, MsWhite]
+P1 refuted by showing ['MsWhite']
+
+Knowledge of P3:
+  P1      (knife, revolver)
+          BALLROOM, LOUNGE, STUDY (kitchen, library)
+          MISSSCARLETT, MSWHITE (ColMustard, ProfPlum)
+  P2      ROPE (knife, revolver)
+          DINING (kitchen, library)
+          (ColMustard, ProfPlum)
+  secret  CDSTICK
+          (kitchen, library)
+          MRSPEACOCK
+
+Knowledge of P1:
+  P2      ROPE (knife, revolver, wrench)
+          DINING (hall, library)
+          (ColMustard, ProfPlum)
+  P3      PIPE (knife, revolver, wrench)
+          BILLIARD, CONSERVATORY (hall, library)
+          MRGREEN (ColMustard, ProfPlum)
+  secret  CDSTICK
+          (hall, library)
+          MRSPEACOCK
+
+Knowledge of P2:
+  P1      (wrench)
+          BALLROOM, LOUNGE, STUDY (hall, kitchen, library)
+          (MissScarlett, MrGreen, MsWhite)
+  P3      PIPE (wrench)
+          BILLIARD, CONSERVATORY (hall, kitchen, library)
+          (MissScarlett, MrGreen, MsWhite)
+  secret  CDSTICK
+          (hall, kitchen, library)
+          MRSPEACOCK
+
+turn  14, game 147 ------------------------------
+P1 named [revolver, hall, ColMustard]
+P2 refuted by showing ['ColMustard']
+
+Knowledge of P1:
+  P2      ROPE (knife, revolver, wrench)
+          DINING (hall, library)
+          COLMUSTARD (ProfPlum)
+  P3      PIPE (knife, revolver, wrench)
+          BILLIARD, CONSERVATORY (hall, library)
+          MRGREEN (ProfPlum)
+  secret  CDSTICK
+          (hall, library)
+          MRSPEACOCK
+
+Knowledge of P2:
+  P1      (wrench)
+          BALLROOM, LOUNGE, STUDY (hall, kitchen, library)
+          (MissScarlett, MrGreen, MsWhite)
+  P3      PIPE (wrench)
+          BILLIARD, CONSERVATORY (hall, kitchen, library)
+          (MissScarlett, MrGreen, MsWhite)
+  secret  CDSTICK
+          (hall, kitchen, library)
+          MRSPEACOCK
+
+Knowledge of P3:
+  P1      (knife, revolver)
+          BALLROOM, LOUNGE, STUDY (kitchen, library)
+          MISSSCARLETT, MSWHITE (ColMustard, ProfPlum)
+  P2      ROPE (knife, revolver)
+          DINING (kitchen, library)
+          (ColMustard, ProfPlum)
+  secret  CDSTICK
+          (kitchen, library)
+          MRSPEACOCK
+
+turn  15, game 147 ------------------------------
+P2 named [wrench, hall, MissScarlett]
+P3 refuted by showing ['hall']
+
+Knowledge of P2:
+  P1      (wrench)
+          BALLROOM, LOUNGE, STUDY (kitchen, library)
+          (MissScarlett, MrGreen, MsWhite)
+  P3      PIPE (wrench)
+          BILLIARD, CONSERVATORY, HALL (kitchen, library)
+          (MissScarlett, MrGreen, MsWhite)
+  secret  CDSTICK
+          (kitchen, library)
+          MRSPEACOCK
+
+Knowledge of P1:
+  P2      ROPE (knife, revolver, wrench)
+          DINING (hall, library)
+          COLMUSTARD (ProfPlum)
+  P3      PIPE (knife, revolver, wrench)
+          BILLIARD, CONSERVATORY (hall, library)
+          MRGREEN (ProfPlum)
+  secret  CDSTICK
+          (hall, library)
+          MRSPEACOCK
+
+Knowledge of P3:
+  P1      (knife, revolver)
+          BALLROOM, LOUNGE, STUDY (kitchen, library)
+          MISSSCARLETT, MSWHITE (ColMustard, ProfPlum)
+  P2      ROPE (knife, revolver)
+          DINING (kitchen, library)
+          (ColMustard, ProfPlum)
+  secret  CDSTICK
+          (kitchen, library)
+          MRSPEACOCK
+
+turn  16, game 147 ------------------------------
+P3 named [revolver, library, ColMustard]
+P1 could not refute
+P2 refuted by showing ['ColMustard']
+
+Knowledge of P3:
+  P1      (knife)
+          BALLROOM, LOUNGE, STUDY (kitchen)
+          MISSSCARLETT, MSWHITE (ProfPlum)
+  P2      REVOLVER, ROPE (knife)
+          DINING (kitchen, library)
+          COLMUSTARD (ProfPlum)
+  secret  CDSTICK
+          (kitchen, library)
+          MRSPEACOCK
+
+==================================================
+
+Here P2 learns something by P3 passing.  Awesome!
+
+Just before the end of P3's turn, we have this:
+
+Knowledge of observer:
+  P1      (knife, wrench)
+          BALLROOM, LOUNGE, STUDY (billiard, conservatory, hall, kitchen)
+          MISSSCARLETT, MSWHITE (MrGreen, ProfPlum)
+  P2      ROPE (knife, revolver, wrench)
+          DINING (hall, kitchen, library)
+          (ColMustard, ProfPlum)
+  P3      PIPE (knife, revolver, wrench)
+          (billiard, conservatory, hall, kitchen, library)
+          (ColMustard, MrGreen, ProfPlum)
+  secret  CDSTICK
+          (billiard, conservatory, hall, kitchen, library)
+          MRSPEACOCK
+
+Knowledge of P2:
+  P1      (wrench)
+          BALLROOM, LOUNGE, STUDY (kitchen)
+          MISSSCARLETT, MSWHITE (MrGreen)
+  P3      PIPE (wrench)
+          BILLIARD, CONSERVATORY, HALL (kitchen, library)
+          (MrGreen)
+  secret  CDSTICK
+          (kitchen, library)
+          MRSPEACOCK
+
+When P3 passes, P2 deduces Not(has_P3_kitchen), has_P3_MrGreen, has_P3_wrench
+
+Knowledge of P2 after P3 passes:
+  P1      BALLROOM, KITCHEN, LOUNGE, STUDY
+          MISSSCARLETT, MSWHITE
+  P3      PIPE, WRENCH
+          BILLIARD, CONSERVATORY, HALL
+          MRGREEN
+  secret  CDSTICK
+          LIBRARY
+          MRSPEACOCK
+
+Note that P2 figured out where EVERY CARD IS, just by noting that P3 passed!
+(Also note that P2 goes on to win the game. Yay!)
+
+==================================================
+
+Knowledge of P1:
+  P2      ROPE (knife, revolver, wrench)
+          DINING (hall, library)
+          COLMUSTARD (ProfPlum)
+  P3      PIPE (knife, revolver, wrench)
+          BILLIARD, CONSERVATORY (hall, library)
+          MRGREEN (ProfPlum)
+  secret  CDSTICK
+          (hall, library)
+          MRSPEACOCK
+
+Knowledge of P2:
+  P1      BALLROOM, KITCHEN, LOUNGE, STUDY
+          MISSSCARLETT, MSWHITE
+  P3      PIPE, WRENCH
+          BILLIARD, CONSERVATORY, HALL
+          MRGREEN
+  secret  CDSTICK
+          LIBRARY
+          MRSPEACOCK
+
+turn  17, game 147 ------------------------------
+P1 named [revolver, hall, ProfPlum]
+P2 refuted by showing ['ProfPlum']
+
+Knowledge of P1:
+  P2      ROPE (knife, revolver, wrench)
+          DINING (hall, library)
+          COLMUSTARD, PROFPLUM
+  P3      PIPE (knife, revolver, wrench)
+          BILLIARD, CONSERVATORY (hall, library)
+          MRGREEN
+  secret  CDSTICK
+          (hall, library)
+          MRSPEACOCK
+
+P2 can win
+Knowledge of P2:
+  P1      BALLROOM, KITCHEN, LOUNGE, STUDY
+          MISSSCARLETT, MSWHITE
+  P3      PIPE, WRENCH
+          BILLIARD, CONSERVATORY, HALL
+          MRGREEN
+  secret  CDSTICK
+          LIBRARY
+          MRSPEACOCK
+
+Knowledge of P3:
+  P1      (knife)
+          BALLROOM, LOUNGE, STUDY (kitchen)
+          MISSSCARLETT, MSWHITE (ProfPlum)
+  P2      REVOLVER, ROPE (knife)
+          DINING (kitchen, library)
+          COLMUSTARD (ProfPlum)
+  secret  CDSTICK
+          (kitchen, library)
+          MRSPEACOCK
+
+turn  18, game 147 ------------------------------
+P2 named [cdstick, hall, MrGreen]
+P3 refuted by showing ['hall']
+
+P2 won!
+Knowledge of P2:
+  P1      BALLROOM, KITCHEN, LOUNGE, STUDY
+          MISSSCARLETT, MSWHITE
+  P3      PIPE, WRENCH
+          BILLIARD, CONSERVATORY, HALL
+          MRGREEN
+  secret  CDSTICK
+          LIBRARY
+          MRSPEACOCK
+
+Knowledge of observer just before end of game:
+  P1      (knife, wrench)
+          BALLROOM, LOUNGE, STUDY (billiard, conservatory, hall, kitchen)
+          MISSSCARLETT, MSWHITE (MrGreen, ProfPlum)
+  P2      ROPE (knife, revolver, wrench)
+          DINING (hall, kitchen, library)
+          (ColMustard, ProfPlum)
+  P3      PIPE (knife, revolver, wrench)
+          (billiard, conservatory, hall, kitchen, library)
+          (ColMustard, MrGreen, ProfPlum)
+  secret  CDSTICK
+          (billiard, conservatory, hall, kitchen, library)
+          MRSPEACOCK
